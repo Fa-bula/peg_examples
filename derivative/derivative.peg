@@ -1,0 +1,8 @@
+grammar Derivative
+	S <- M "+" S <SNode1> / M <SNode2>
+	M <- K1:K "x^" K2:K <MonomNode>
+	K <- [0-9]+ <KNode>
+
+# S -> M + S | M
+# M -> K x^K
+# K -> (0|1|2|3|4|5|6|7|8|9)^+

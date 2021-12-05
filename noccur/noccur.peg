@@ -1,0 +1,6 @@
+grammar Noccur
+	S <- A1:A "#" A2:A <SNode>
+	A <- "a" A <ANodea> / "b" A <ANodeb> / "" <ENode>
+
+# S -> A#A
+# A -> aA | bA | epsilon

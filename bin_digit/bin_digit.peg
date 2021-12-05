@@ -1,0 +1,6 @@
+grammar Digits
+	S <- "1" D <DNodeOne> / "0" <ENode>
+	D <- "1" D <DNodeOne> / "0" D <DNodeZero> / "" <ENode> 
+
+# S -> 1D | 0	
+# D -> 1D | 0D | epsilon
