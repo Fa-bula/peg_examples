@@ -1,0 +1,4 @@
+grammar Itemize
+    S <- "\\begin{itemize}" A "\\end{itemize}" <SNode>
+    A <- [ ]* "\\item " [ ]* I A <ANode> / [ ]* S A <ASNode> /"" <ENode>
+    I <- [a-zA-Z0-9 ]+ <INode>
