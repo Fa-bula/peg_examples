@@ -1,0 +1,9 @@
+Grammar diffs_2_1
+    S <- A B
+    A <- "aa"+
+    B <- "aa"
+
+# Grammar diffs_2_2
+#     S <- B A
+#     A <- "aa"+
+#     B <- "aa"

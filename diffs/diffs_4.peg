@@ -1,0 +1,4 @@
+Grammar diffs_4
+    S <- &(A 'c') 'a'+ B
+    A <- 'a' A 'b' / 'ab'
+    B <- 'b' B 'c' / 'bc'

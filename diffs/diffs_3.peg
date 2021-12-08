@@ -1,0 +1,4 @@
+Grammar diffs_3
+    S <- (!A) B
+    A <- "a" A "b" / "ab"
+    B <- [ab]*

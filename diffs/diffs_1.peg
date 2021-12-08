@@ -1,0 +1,5 @@
+Grammar diffs_1_1
+    S <- "a" / "aa"
+
+# Grammar diffs_1_2
+#     S <- "aa" / "a"
